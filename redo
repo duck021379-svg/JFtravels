@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Travels | Haunted Investigations & Urban Exploration</title>
+    
+    <!-- SEO & Social Sharing (Open Graph) Meta Tags -->
+    <meta name="description" content="Join James on JF Travels for paranormal explorations, haunted investigations, and chilling urban decay across Pennsylvania and beyond.">
+    <meta property="og:title" content="JF Travels | Haunted Investigations">
+    <meta property="og:description" content="Paranormal Exploration & Urban Decay. Watch the latest investigations from Savagio Funeral Home and Cresson Sanatorium.">
+    <meta property="og:image" content="https://img.youtube.com/vi/sSylxrcMZWw/maxresdefault.jpg">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@300;400;600;700&display=swap');
+
+        :root {
+            --haunted-red: #8b0000;
+            --ghost-grey: #1a1a1a;
+            --void-black: #050505;
+        }
+
+        body {
+            background-color: var(--void-black);
+            color: #d1d1d1;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .horror-font {
+            font-family: 'Creepster', cursive;
+            letter-spacing: 2px;
+        }
+
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 1)), 
+                        url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .video-portal {
+            background: #111;
+            border: 1px solid rgba(139, 0, 0, 0.4);
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-image: url('https://img.youtube.com/vi/sSylxrcMZWw/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .video-thumbnail:hover {
+            filter: brightness(1.15) saturate(1.2);
+        }
+
+        .short-portal {
+            width: 100%;
+            max-width: 340px;
+            aspect-ratio: 9/16;
+            background: #0a0a0a;
+            border: 1px solid rgba(139, 0, 0, 0.5);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 0 35px rgba(139, 0, 0, 0.25);
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(139, 0, 0, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.8);
+            animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-red {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(139, 0, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(139, 0, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(139, 0, 0, 0); }
+        }
+
+        .btn-blood {
+            background-color: var(--haunted-red);
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn-blood:hover {
+            background-color: #b30000;
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+        }
+
+        .social-card {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            transition: 0.3s;
+        }
+
+        .social-card:hover {
+            border-color: var(--haunted-red);
+            background: #141414;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-black/85 backdrop-blur-md border-b border-red-900/20 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="horror-font text-3xl text-red-700 hover:text-red-500 transition">JF Travels</a>
+            <div class="flex gap-6">
+                <a href="#investigations" class="text-xs font-bold uppercase tracking-wider hover:text-red-500 transition">Investigations</a>
+                <a href="#shorts" class="text-xs font-bold uppercase tracking-wider hover:text-red-500 transition">Shorts</a>
+                <a href="#connect" class="text-xs font-bold uppercase tracking-wider hover:text-red-500 transition">Socials</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1 class="horror-font text-6xl md:text-9xl text-red-700 mb-2 drop-shadow-2xl">JF Travels</h1>
+        <p class="text-gray-400 text-sm md:text-lg italic tracking-[0.3em] uppercase max-w-2xl px-4">
+            Paranormal Exploration & Urban Decay
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 -mt-12 pb-20 relative z-10">
+
+        <section id="investigations" class="video-box shadow-2xl mb-16 rounded-2xl overflow-hidden border border-zinc-800/80">
+            <div class="p-4 bg-zinc-900 border-b border-red-900/20 flex items-center justify-between">
+                <span class="text-red-600 font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                    <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span> Featured Investigation
+                </span>
+                <span class="text-gray-500 text-[10px] uppercase tracking-widest">Full Episode</span>
+            </div>
+
+            <div id="main-video-container" class="video-portal rounded-none border-0">
+                <div class="video-thumbnail group" onclick="playFeaturedVideo()">
+                    <div class="play-button">
+                        <i class="fas fa-play ml-1"></i>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-black/70 p-4 backdrop-blur-sm group-hover:bg-red-900/50 transition flex justify-between items-center">
+                        <p class="text-xs font-bold uppercase tracking-widest text-white">Click to Play Investigation Here</p>
+                        <span class="text-[10px] text-gray-300 uppercase"><i class="fab fa-youtube text-red-500 mr-1"></i> 1080p HD</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-10 bg-zinc-900/60 backdrop-blur-sm">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Abandoned Funeral Home: Human Remains Found</h2>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    James uncovers the dark history of the Savagio Funeral Home. From legal scandals to actual remains left inside the building, this is one of JF Travels' most chilling urban explorations to date.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.youtube.com/@jftravels412?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn-blood text-white px-8 py-4 rounded-lg flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fab fa-youtube text-xl"></i> SUBSCRIBE ON YOUTUBE
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=sSylxrcMZWw" target="_blank" rel="noopener noreferrer" class="bg-zinc-800 hover:bg-zinc-700 text-gray-200 px-6 py-4 rounded-lg flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider transition">
+                        <i class="fas fa-external-link-alt"></i> Open in YouTube App
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shorts" class="mb-20 bg-zinc-900/40 border border-red-900/20 rounded-2xl p-6 md:p-10 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-red-900/20 pb-4 mb-8">
+                <span class="text-red-600 font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                    <i class="fas fa-bolt"></i> Field Clips // YouTube Shorts
+                </span>
+                <span class="text-gray-500 text-[10px] uppercase tracking-widest">@jftravels412</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="short-portal">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/U0-fpe3ePYk" 
+                            title="JF Travels - Cresson Sanatorium and Prison Exploration" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            loading="lazy"
+                            style="display: block; width: 100%; height: 100%;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 flex flex-col justify-center">
+                    <div class="inline-block bg-red-950/60 border border-red-800/40 text-red-400 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4 w-fit">
+                        Cresson, Pennsylvania
+                    </div>
+                    <h3 class="horror-font text-4xl md:text-5xl text-red-600 mb-4 tracking-wide">
+                        Cresson Sanatorium & Prison Exploration
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Step inside the decaying corridors of the historic Cresson Tuberculosis Sanatorium and later State Correctional Institution. Built in the early 1900s, thousands of patients and inmates passed through these eerie halls—and many never left.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="text-xs bg-black/60 border border-zinc-800 px-3 py-1.5 rounded text-gray-400">#explore</span>
+                        <span class="text-xs bg-black/60 border border-zinc-800 px-3 py-1.5 rounded text-gray-400">#urbex</span>
+                        <span class="text-xs bg-black/60 border border-zinc-800 px-3 py-1.5 rounded text-gray-400">#paranormal</span>
+                        <span class="text-xs bg-black/60 border border-zinc-800 px-3 py-1.5 rounded text-gray-400">#shorts</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://youtube.com/shorts/U0-fpe3ePYk" target="_blank" rel="noopener noreferrer" class="btn-blood text-white px-6 py-3.5 rounded-lg flex items-center justify-center gap-2 text-xs">
+                            <i class="fab fa-youtube text-lg"></i> Watch Short on YouTube
+                        </a>
+                        <a href="https://www.youtube.com/@jftravels412/shorts" target="_blank" rel="noopener noreferrer" class="bg-zinc-800 hover:bg-zinc-700 text-gray-200 px-6 py-3.5 rounded-lg flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider transition">
+                            View All Shorts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect">
+            <h2 class="horror-font text-4xl text-center mb-10 text-gray-200">Connect With James</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+                <a href="https://www.youtube.com/@jftravels412" target="_blank" rel="noopener noreferrer" class="social-card p-8 rounded-xl text-center group">
+                    <i class="fab fa-youtube text-3xl mb-3 text-red-600 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold text-xs tracking-widest uppercase">YouTube</h4>
+                </a>
+
+                <a href="https://www.tiktok.com/@jf_travels" target="_blank" rel="noopener noreferrer" class="social-card p-8 rounded-xl text-center group">
+                    <i class="fab fa-tiktok text-3xl mb-3 text-gray-300 group-hover:text-white group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold text-xs tracking-widest uppercase">TikTok</h4>
+                </a>
+
+                <a href="https://www.snapchat.com/add/bizzyyy412" target="_blank" rel="noopener noreferrer" class="social-card p-8 rounded-xl text-center group">
+                    <i class="fab fa-snapchat-ghost text-3xl mb-3 text-yellow-400 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold text-xs tracking-widest uppercase">Snapchat</h4>
+                </a>
+
+                <a href="https://www.facebook.com/share/17nmsJ96Uq/" target="_blank" rel="noopener noreferrer" class="social-card p-8 rounded-xl text-center group">
+                    <i class="fab fa-facebook-f text-3xl mb-3 text-blue-600 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold text-xs tracking-widest uppercase">Facebook</h4>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 bg-black border-t border-red-900/10 text-center">
+        <div class="horror-font text-3xl text-red-900 opacity-30 mb-4">JF Travels</div>
+        <div class="text-[10px] text-gray-600 uppercase tracking-[0.4em]">
+            &copy; 2026 JF Travels | All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        function playFeaturedVideo() {
+            const container = document.getElementById('main-video-container');
+            container.innerHTML = `
+                <div class="aspect-video w-full">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/sSylxrcMZWw?autoplay=1" 
+                        title="Abandoned Funeral Home: Human Remains Found" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        class="w-full h-full">
+                    </iframe>
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
